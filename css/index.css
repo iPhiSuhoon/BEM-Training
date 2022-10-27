@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap");
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #292733;
+}
+
+.header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 20px 0;
+}
+.header > .brand > img {
+  width: 96.32px;
+  height: auto;
+}
+.header > .brand,
+.header .nav,
+.header .nav__container,
+.header .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+}
+.header > .brand .nav__container,
+.header .nav .nav__container,
+.header .nav__container .nav__container,
+.header .icons .nav__container {
+  margin: 0;
+  flex-wrap: wrap;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.header > .brand .nav__links,
+.header .nav .nav__links,
+.header .nav__container .nav__links,
+.header .icons .nav__links {
+  display: inline-flex;
+  margin: auto;
+  padding: 0;
+}
+.header > .brand .nav__links--active,
+.header .nav .nav__links--active,
+.header .nav__container .nav__links--active,
+.header .icons .nav__links--active {
+  color: #C20502;
+}
+.header > .brand .nav__links .nav__link,
+.header .nav .nav__links .nav__link,
+.header .nav__container .nav__links .nav__link,
+.header .icons .nav__links .nav__link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+.header > .brand .nav__links a,
+.header .nav .nav__links a,
+.header .nav__container .nav__links a,
+.header .icons .nav__links a {
+  color: inherit;
+}
+.header .icons {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.banner {
+  max-width: 100%;
+  background-image: url(/assets/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  padding: 4rem 6rem;
+}
+.banner > .banner__text {
+  text-align: right;
+  row-gap: 1rem;
+}
+.banner > .banner__text .hero__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 49px;
+  color: #292733;
+}
+.banner > .banner__text > .hero__description {
+  width: 45%;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292733;
+}
+.banner .bar {
+  width: 158px;
+  height: 5px;
+  margin-top: 8rem;
+  margin-left: auto;
+  padding: 0;
+  background-color: rgba(194, 5, 2, 0.5);
+}
+.banner .bar .bar__full {
+  height: 100%;
+  background-color: #C20502;
+  margin: 0;
+  border: none;
+  width: 53px;
+  margin-right: auto;
+}
+
+.feature {
+  background-color: #C20502;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+.feature .feature__items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.feature .feature__item__header {
+  width: 8ch;
+  margin: auto;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 118.5%;
+  color: #FFFFFF;
+}
+.feature img {
+  width: 120px;
+  height: auto;
+}
+.feature p {
+  margin: 0;
+}
+
+.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.cta > * {
+  width: 100%;
+  display: flex;
+}
+.cta .cta__items img {
+  width: 340px;
+  height: auto;
+}
+.cta .cta__items--left {
+  background-image: url(/assets/find\ us\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 44.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 91px 0;
+}
+.cta .cta__items--right {
+  flex-basis: 55.5%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/cta\ right\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cta .cta__items .cta__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.cta .cta__items .cta__item .cta__header {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #F1F3F4;
+  width: 14ch;
+  text-align: center;
+}
+.cta .cta__items .cta__item button {
+  border: none;
+  background-color: #C20502;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 20px 40px;
+}
+.cta .cta__items .cta__item button:hover {
+  cursor: pointer;
+}
+
+.about-us {
+  background-image: url(/assets/About\ Us.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 4rem 0;
+}
+.about-us__content {
+  width: 89%;
+  margin: auto;
+  text-align: center;
+}
+.about-us__header {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 49px;
+  width: 80%;
+  margin: auto;
+}
+.about-us__header > h3 {
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #C20502;
+  padding: 20px 40px;
+}
+.btn--red {
+  background-color: #C20502;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.timber-dealer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  min-height: 85vh;
+}
+.timber-dealer .timber__col {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.timber-dealer .timber__col--left {
+  align-items: flex-end;
+  width: 100%;
+  flex-basis: 55%;
+  background-image: url(/assets/timber-deal-left.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.timber-dealer .timber__col--left .timber__col-left-content {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.6vh;
+  line-height: 111%;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 767px) {
+  .timber-dealer .timber__col--left {
+    flex-basis: 100%;
+  }
+}
+.timber-dealer .timber__col--right {
+  width: 100%;
+  flex-basis: 45%;
+  display: flex;
+  padding: 0;
+}
+.timber-dealer .timber__col--right .timber__col-right-content {
+  background-color: #F1F3F4;
+  min-height: 69.6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timber-dealer .timber__col--right .timber__col-right-content img {
+  margin-bottom: 1rem;
+}
+.timber-dealer .timber__col--right .timber__col-right-content .item__availability {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  color: #292733;
+  margin: 0;
+}
+.timber-dealer .timber__col--right .timber__col-right-content .item__dimensions {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  width: 22ch;
+  color: #292733;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .timber-dealer .timber__col--right {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .timber-dealer {
+    flex-direction: column;
+  }
+}
+
+.timbers {
+  width: 100%;
+  padding: 4rem 0;
+}
+.timbers > .timber {
+  width: 90%;
+  margin: auto;
+  font-family: "Roboto Slab";
+  font-style: normal;
+}
+.timbers > .timber .timber__header {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #292733;
+}
+.timbers > .timber .timber__products,
+.timbers > .timber .order-now {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.timbers > .timber .timber__products {
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+.timbers > .timber .timber__products .product {
+  display: table-column;
+  justify-content: start;
+}
+.timbers > .timber .timber__products .product .product__location {
+  font-weight: 500;
+  font-size: 16px;
+  color: #888888;
+}
+.timbers > .timber .timber__products .product .product__dimension {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #292733;
+}
+.timbers > .timber .timber__products .product .product__price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #C20502;
+}
+.timbers > .timber .timber__products .product p {
+  margin: 0.5rem 0;
+}
+.timbers > .timber .order-now {
+  margin-top: 2rem;
+  flex-wrap: nowrap;
+}
+.timbers > .timber .order-now > * {
+  width: 100%;
+}
+.timbers > .timber .order-now__image {
+  display: flex;
+}
+.timbers > .timber .order-now__image > img {
+  width: 100%;
+}
+.timbers > .timber .order-now__content {
+  background-color: #C20502;
+  padding: 4rem 0;
+  padding-left: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.timbers > .timber .order-now__content h3 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.timbers > .timber .order-now__content .btn {
+  margin-top: 4rem;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.showcase > * {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.showcase__hardwares, .showcase__woods {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.showcase__hardwares {
+  background-image: url(/assets/showcase-hardware.png);
+  padding: 4rem 0;
+}
+.showcase__hardwares > .showcase__content {
+  margin-left: 10%;
+}
+.showcase__woods {
+  background-image: url(/assets/showcase-wood.png);
+  padding: 4rem 0;
+}
+.showcase__woods .showcase__content {
+  margin-left: 7%;
+}
+.showcase .showcase__content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.showcase .showcase__content > h5 {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.showcase .showcase__content > h3 {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 767px) {
+  .showcase {
+    flex-wrap: wrap;
+  }
+}
+
+.feature-project {
+  background-image: url(/assets/feature-project.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 4rem 0;
+}
+.feature-project__content {
+  width: 90%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.feature-project__content p,
+.feature-project__content h3 {
+  margin: 0;
+}
+.feature-project__content .feature-project__title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+.feature-project__content .feature-project__header {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  margin: auto;
+  font-size: 64px;
+  color: #FFFFFF;
+}
+.feature-project__content .feature-project__text {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+}
+.products__container .products {
+  flex: inherit;
+}/*# sourceMappingURL=index.css.map */
